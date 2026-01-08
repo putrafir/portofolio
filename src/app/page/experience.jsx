@@ -53,10 +53,10 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="relative px-24 py-32">
+    <section id="experience" className="relative px-4 md:px-24 py-32">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#3b1b6d,transparent_40%)]" />
       {/* TITLE */}
-      <div className="text-center mb-20">
+      <div className="text-center md:mb-20">
         <Header title="Experience" />
         {/* <p className="text-white/70 max-w-2xl mx-auto">
           We put your ideas and wishes into a unique digital experience that
@@ -78,7 +78,7 @@ export default function Experience() {
         <motion.div
           layout
           className="
-              absolute left-0 w-full rounded-2xl
+              absolute left-0 w-full
               bg-gradient-to-r from-[#7f3cf0] to-[#5b2ccf]
               z-0
             "
@@ -103,40 +103,47 @@ export default function Experience() {
               onMouseEnter={() => handleHover(i)}
               // onMouseLeave={() => setActive(null)}
               className="
-                grid grid-cols-[400px_1fr_40px] gap-8
-                px-10 py-10
+                grid grid-rows-1 md:grid-cols-[400px_1fr_40px] gap-4 md:gap-8
+                p-4 md:px-10  md:py-10
                 border-b border-lavender/30
                 cursor-pointer
               "
             >
               {/* LEFT */}
-              <div className="items-center gap-8">
-                <h3
-                  className={`text-2xl font-bold transition-colors ${
-                    active === i ? "text-white" : "text-white/90"
+              <div className="relative flex items-start justify-between md:block">
+                <div>
+                  <h3
+                    className={`text-md md:text-2xl font-bold transition-colors ${
+                      active === i ? "text-white" : "text-white/90"
+                    }`}
+                  >
+                    {item.position}
+                  </h3>
+                  <h4
+                    className={` text-sm md:text-lg font-semibold ${
+                      active === i ? "text-white" : " text-white/80"
+                    }`}
+                  >
+                    {item.company}
+                  </h4>
+                  <h4
+                    className={` text-sm md:text-lg  ${
+                      active === i ? "text-white" : "text-white/70"
+                    }`}
+                  >
+                    {item.timeline}
+                  </h4>
+                </div>
+                <ArrowUpRight
+                  className={`w-6 h-6 md:hidden transition-all ${
+                    active === i ? "text-white rotate-45" : "text-lavender"
                   }`}
-                >
-                  {item.position}
-                </h3>
-                <h4
-                  className={`text-lg font-semibold ${
-                    active === i ? "text-white" : " text-white/80"
-                  }`}
-                >
-                  {item.company}
-                </h4>
-                <h4
-                  className={`text-lg  ${
-                    active === i ? "text-white" : "text-white/70"
-                  }`}
-                >
-                  {item.timeline}
-                </h4>
+                />
               </div>
 
               {/* MIDDLE */}
               <p
-                className={`max-w-md text-sm transition-colors ${
+                className={`max-w-md text-[12px] md:text-sm transition-colors ${
                   active === i ? "text-white/90" : "text-white/60"
                 }`}
               >
@@ -145,7 +152,7 @@ export default function Experience() {
 
               {/* RIGHT */}
               <ArrowUpRight
-                className={`w-6 h-6 transition-all ${
+                className={` hidden md:block w-6 h-6 transition-all ${
                   active === i ? "text-white rotate-45" : "text-lavender"
                 }`}
               />

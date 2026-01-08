@@ -52,7 +52,7 @@ export default function Projects() {
           (project) => project.category === activeFilter.toLowerCase()
         );
   return (
-    <section id="projects" className="relative bg-dark px-24 py-32">
+    <section id="projects" className="relative bg-dark md:px-24 py-32">
       {/* Title */}
       <div className=" text-center mb-16">
         <Header title="My Projects" />
