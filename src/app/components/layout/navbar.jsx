@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export default function Navbar() {
   const [showFixed, setShowFixed] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,7 +33,7 @@ export default function Navbar() {
         className="object-contain"
       />
 
-      <div className="flex">
+      <div className=" hidden md:flex">
         <ul className="flex gap-6 items-center pr-10">
           {navItems.map((item) => (
             <li key={item.label} className="list-none">
@@ -40,7 +41,7 @@ export default function Navbar() {
                 href={item.href}
                 className="
                   relative block px-5 py-2
-                  text-sm font-semibold uppercase text-white z-10
+                  text-base font-bold  text-white z-10
                   transition-colors duration-300
 
                   before:content-['']
@@ -81,6 +82,14 @@ export default function Navbar() {
           <span className="relative z-10">Contact Me</span>
         </button>
       </div>
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="md:hidden flex flex-col gap-1.5"
+      >
+        <span className="w-6 h-[2px] bg-white" />
+        <span className="w-6 h-[2px] bg-white" />
+        <span className="w-6 h-[2px] bg-white" />
+      </button>
     </>
   );
 
@@ -94,7 +103,7 @@ export default function Navbar() {
             transition={{ duration: 0.2 }}
             className="absolute top-0 left-0 w-full z-40"
           >
-            <div className="flex items-center justify-between px-24 py-6">
+            <div className="flex items-center justify-between px-6 md:px-24 py-6">
               {NavbarContent}
             </div>
           </motion.nav>
@@ -119,6 +128,39 @@ export default function Navbar() {
               {NavbarContent}
             </div>
           </motion.nav>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.35, ease: "easeOut" }}
+            className="
+        fixed top-[72px] left-0 w-full z-40
+        bg-[#0f0715]/95 backdrop-blur-xl
+        md:hidden overflow-hidden
+      "
+          >
+            <ul className="flex flex-col gap-6 px-10 py-8">
+              {navItems.map((item) => (
+                <li key={item.label}>
+                  <a
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="block text-lg font-semibold text-white"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+
+              <button className="mt-4  rounded-full bg-gradient-lavender py-3 text-white font-semibold">
+                Contact Me
+              </button>
+            </ul>
+          </motion.div>
         )}
       </AnimatePresence>
     </>
