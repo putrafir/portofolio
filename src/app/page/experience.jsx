@@ -53,7 +53,7 @@ export default function Experience() {
   ];
 
   return (
-    <section id="experience" className="relative px-4 md:px-24 py-32">
+    <section id="experience" className="relative px-4 md:px-24 py-20 md:py-32">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#3b1b6d,transparent_40%)]" />
       {/* TITLE */}
       <div className="text-center md:mb-20">
@@ -143,7 +143,7 @@ export default function Experience() {
 
               {/* MIDDLE */}
               <p
-                className={`max-w-md text-[12px] md:text-sm transition-colors ${
+                className={`max-w-md text-xs md:text-sm transition-colors ${
                   active === i ? "text-white/90" : "text-white/60"
                 }`}
               >

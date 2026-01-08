@@ -52,7 +52,10 @@ export default function Projects() {
           (project) => project.category === activeFilter.toLowerCase()
         );
   return (
-    <section id="projects" className="relative bg-dark md:px-24 py-32">
+    <section
+      id="projects"
+      className="relative bg-dark px-4 md:px-24 py-20 md:py-32"
+    >
       {/* Title */}
       <div className=" text-center mb-16">
         <Header title="My Projects" />
@@ -102,7 +105,7 @@ export default function Projects() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-10"
+        className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10"
       >
         {filteredProjects.map((project, i) => (
           <div
@@ -122,7 +125,7 @@ export default function Projects() {
                 src={project.image}
                 alt={project.title}
                 className="
-          w-full h-[360px] object-cover
+          w-full h-[200px] md:h-[360px] object-cover
           transition-transform duration-700
           group-hover:scale-105
         "
@@ -132,15 +135,17 @@ export default function Projects() {
             {/* CONTENT */}
             <div className="p-8">
               {/* Title */}
-              <h3 className="text-2xl font-bold mb-3">{project.title}</h3>
+              <h3 className=" text-xl md:text-2xl font-bold mb-3">
+                {project.title}
+              </h3>
 
               {/* Description */}
-              <p className="text-sm text-white/70 leading-relaxed mb-6 line-clamp-2">
+              <p className=" text-xs md:text-sm text-white/70 leading-relaxed mb-6 line-clamp-2">
                 {project.description}
               </p>
 
               {/* Tech Stack */}
-              <div className="flex flex-wrap gap-3 mb-8">
+              <div className="flex flex-nowrap gap-3 mb-8 overflow-x-auto scrollbar-hide">
                 {project.tech.map((tech, idx) => (
                   <span
                     key={idx}
@@ -150,6 +155,7 @@ export default function Projects() {
               rounded-full
               bg-white text-black
               text-xs font-semibold
+              whitespace-nowrap
             "
                   >
                     {tech}
