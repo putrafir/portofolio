@@ -6,9 +6,23 @@
 
   --lavender: #7f3cf0;
   --lavender-teks: #b45cff;
+  --lavender-dark: #3b1b6d;
+  --dark: #050709;
 
   --font-heading: "Russo One", sans-serif;
   --font-body: "Sora", sans-serif;
+
+  --gradient-lavender: linear-gradient(
+    to right,
+    var(--lavender),
+    var(--lavender-dark)
+  );
+  --gradient-lavender-to-white: linear-gradient(
+    to right,
+    var(--lavender),
+    var(--lavender-teks),
+    #ffffff
+  );
 }
 
 @theme inline {
@@ -19,6 +33,8 @@
 
   --color-lavender: var(--lavender);
   --color-lavender-teks: var(--lavender-teks);
+  --color-lavender-dark: var(--lavender-dark);
+  --color-dark: var(--dark);
 
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
@@ -35,4 +51,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
+}
+
+.bg-gradient-lavender {
+  background: var(--gradient-lavender);
+}
+
+.bg-gradient-lavender-to-white {
+  background: var(--gradient-lavender-to-white);
+  bg-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }

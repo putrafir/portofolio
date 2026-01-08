@@ -21,10 +21,7 @@ export default function About() {
   ];
 
   return (
-    <section
-      id="home"
-      className="relative z-10 flex items-center justify-between px-24 pt-24"
-    >
+    <section className="relative z-10 flex items-center justify-between px-24 pt-52 pb-20">
       {/* LEFT */}
       <motion.div
         className="relative max-w-2xl"
@@ -47,9 +44,9 @@ export default function About() {
         {/* Title */}
         <motion.h2
           variants={itemUp}
-          className="text-[64px] leading-tight font-extrabold mb-6 bg-linear-to-r from-lavender via-lavender-teks to-white bg-clip-text text-transparent"
+          className="text-[64px] leading-tight font-extrabold mb-6 bg-gradient-lavender-to-white"
         >
-          Software Engineer <br />
+          Software Engineer
         </motion.h2>
 
         {/* Description */}
@@ -77,12 +74,11 @@ export default function About() {
             View Firdaus&apos;s CV
           </a>
 
-          <div className="flex gap-4">
+          <motion.div variants={iconPop} className="flex gap-4">
             {socials.map((social, i) => (
-              <motion.a
+              <a
                 key={i}
                 href={social.url}
-                variants={iconPop}
                 className="
                   group w-10 h-10 rounded-full border border-lavender
                   flex items-center justify-center
@@ -94,16 +90,16 @@ export default function About() {
                   size={16}
                   className="transition-colors duration-300 group-hover:text-white"
                 />
-              </motion.a>
+              </a>
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       </motion.div>
 
       {/* RIGHT IMAGE */}
       <motion.div
-        initial={{ opacity: 0, rotate: -8, scale: 0.95 }}
-        animate={{ opacity: 1, rotate: -4, scale: 1 }}
+        initial={{ opacity: 0, rotate: -10, scale: 0.95 }}
+        animate={{ opacity: 1, rotate: 0, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
         className="relative group"
       >
