@@ -4,6 +4,7 @@ import About from "./page/about";
 import Projects from "./page/projects";
 import Experience from "./page/experience";
 import Achievements from "./page/achievements";
+import Contact from "./page/contact";
 
 export default function Home() {
   return (
@@ -11,11 +12,12 @@ export default function Home() {
     <main>
       <Navbar />
       {/* BACKGROUND GRADIENT */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#3b1b6d,transparent_40%)]" />
+      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#3b1b6d,transparent_40%)]" /> */}
       <About />
       <Projects />
       <Experience />
       <Achievements />
+      <Contact />
     </main>
   );
 }

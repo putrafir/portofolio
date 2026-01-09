@@ -22,6 +22,8 @@ export default function About() {
 
   return (
     <section className=" scroll-smooth relative bg-[#0f0715] text-white z-10 px-6 flex  md:px-24 pt-30 md:pt-52 pb-20">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#3b1b6d,transparent_40%)]" />
+
       <div className="flex flex-col md:flex-row items-center justify-between md:items-start gap-16">
         {/* LEFT */}
         <motion.div
