@@ -54,7 +54,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative bg-dark px-4 md:px-24 py-20 md:py-32"
+      className="relative scroll-smooth bg-dark text-white px-4 md:px-24 py-20 md:py-32"
     >
       {/* Title */}
       <div className=" text-center mb-16">

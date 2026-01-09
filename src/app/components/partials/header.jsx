@@ -7,7 +7,7 @@ export default function Header({ title }) {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className=" text-4xl md:text-5xl md:mx-[29rem] leading-tight font-extrabold mb-6 bg-gradient-lavender-to-white"
+      className=" text-4xl md:text-5xl md:mx-[25rem] leading-tight font-extrabold mb-6 bg-gradient-lavender-to-white"
     >
       {title}
     </motion.h2>

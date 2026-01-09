@@ -21,6 +21,7 @@ export default function Navbar() {
     { href: "#", label: "Home" },
     { href: "#projects", label: "Projects" },
     { href: "#experience", label: "Experience" },
+    { href: "#achievements", label: "Achievements" },
   ];
 
   const NavbarContent = (
