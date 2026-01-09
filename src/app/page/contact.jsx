@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Contact() {
   return (
-    <section className="relative scroll-smooth py-32 bg-[#0f0715]">
+    <section id="contact" className="relative scroll-smooth py-25 bg-[#0f0715]">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,#3b1b6d,transparent_40%)]" />
       <motion.div
         variants={slideUp}

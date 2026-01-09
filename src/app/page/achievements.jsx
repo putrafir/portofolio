@@ -31,7 +31,7 @@ export default function Achievements() {
   return (
     <section
       id="achievements"
-      className="relative scroll-smooth py-32 bg-gradient-to-b bg-dark"
+      className="relative scroll-smooth px-4 py-32 bg-gradient-to-b bg-dark"
     >
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
@@ -40,7 +40,7 @@ export default function Achievements() {
         </div>
 
         {/* Blog Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
           {blogs.map((blog, i) => (
             <motion.article
               key={blog.id}

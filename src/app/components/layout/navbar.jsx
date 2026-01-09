@@ -69,7 +69,8 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <button
+        <a
+          href="#contact"
           className="
             relative overflow-hidden rounded-full
             bg-gradient-lavender px-7 py-3
@@ -81,7 +82,7 @@ export default function Navbar() {
         >
           <span className="absolute inset-0 bg-gradient-to-r from-lavender-teks to-lavender opacity-0 hover:opacity-100 transition-opacity" />
           <span className="relative z-10">Contact Me</span>
-        </button>
+        </a>
       </div>
       <button
         onClick={() => setIsOpen(!isOpen)}
@@ -125,7 +126,7 @@ export default function Navbar() {
               
             "
           >
-            <div className="flex items-center justify-between px-24 py-4">
+            <div className="flex items-center justify-between px-10 md:px-24 py-4">
               {NavbarContent}
             </div>
           </motion.nav>
@@ -141,7 +142,7 @@ export default function Navbar() {
             className="
         fixed top-[72px] left-0 w-full z-40
         bg-[#0f0715]/95 backdrop-blur-xl
-        md:hidden overflow-hidden
+        md:hidden overflow-hidden 
       "
           >
             <ul className="flex flex-col gap-6 px-10 py-8">
@@ -157,9 +158,12 @@ export default function Navbar() {
                 </li>
               ))}
 
-              <button className="mt-4  rounded-full bg-gradient-lavender py-3 text-white font-semibold">
+              <a
+                href="#contact"
+                className="mt-4  rounded-full bg-gradient-lavender py-3 text-white font-semibold"
+              >
                 Contact Me
-              </button>
+              </a>
             </ul>
           </motion.div>
         )}

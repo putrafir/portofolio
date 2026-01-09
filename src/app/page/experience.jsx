@@ -55,7 +55,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="  bg-[#0f0715] relative px-4 md:px-24 py-20 md:py-32"
+      className=" scroll-smooth  bg-[#0f0715] relative px-4 md:px-24 py-20 md:py-32"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#3b1b6d,transparent_40%)]" />
       {/* TITLE */}
