@@ -160,7 +160,7 @@ export default function Navbar() {
 
               <a
                 href="#contact"
-                className="mt-4  rounded-full bg-gradient-lavender py-3 text-white font-semibold"
+                className="mt-4 px-7 rounded-full bg-gradient-lavender py-3 text-white font-semibold"
               >
                 Contact Me
               </a>
