@@ -67,13 +67,12 @@ export default function About() {
             variants={itemUp}
             className="max-w-xl text-sm md:text-base leading-relaxed text-white/70 mb-10"
           >
-            Experienced Software Engineer building scalable digital solutions
-            for web and mobile. Expert in modern ecosystem development using
-            Laravel and Next.js for both the backend and frontend, and
-            proficient in creating high-performance mobile applications with
-            Swift and Flutter. Focus on clean code, responsive design using
-            Tailwind CSS, and a commitment to delivering seamless user
-            experiences through the integration of cutting-edge technologies.
+            Experienced Software Engineer specializing in scalable web and
+            mobile solutions. Expert in the Laravel and Next.js ecosystem for
+            full-stack development, with advanced proficiency in Swift and
+            Flutter for mobile applications. Dedicated to clean code, responsive
+            design via Tailwind CSS, and delivering seamless user experiences by
+            leveraging cutting-edge technology
           </motion.p>
 
           {/* Buttons */}
