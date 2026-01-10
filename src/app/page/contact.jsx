@@ -15,7 +15,7 @@ export default function Contact() {
         className="text-center mb-20"
       >
         <Header title="Get In Touch" />
-        <p>For business inquiry please send email to</p>
+        <p className=" text-white">For business inquiry please send email to</p>
         <a
           href="mailto:firdausputra0212@gmail.com"
           style={{

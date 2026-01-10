@@ -42,13 +42,13 @@ export default function Experience() {
       timeline: "Apr 2025 - Mei 2025",
       position: "IOS Developer & Learner",
       company: "Apple Developer Academy",
-      desc: "Mengimplementasikan kode Swift dan desain UI/UX sesuai standar HIG untuk aksesibilitas tinggi. Kolaborasi Tim: Menerapkan metode Challenge-Based Learning untuk membangun aplikasi fungsional yang intuitif dan tepat guna.",
+      desc: "Developed Swift-based applications with UI/UX designs following HIG for maximum accessibility. Team Collaboration: Utilized Challenge-Based Learning to deliver intuitive and impactful digital solutions.",
     },
     {
       timeline: "Okt 2023 - Mei 2025",
       position: "Graphic Designer & Illustrator",
       company: "Media Center Poliwangi",
-      desc: "Memproduksi ilustrasi digital dan aset visual kreatif untuk media publikasi kampus. Komunikasi Visual: Memastikan konsistensi identitas brand dan efektivitas pesan melalui desain yang estetis serta komunikatif.",
+      desc: "Developed digital illustrations and creative visual assets for campus media. Visual Communication: Maintained brand consistency and enhanced message delivery through high-quality, aesthetic, and impactful designs.",
     },
   ];
 

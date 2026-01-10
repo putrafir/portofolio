@@ -11,7 +11,7 @@ export default function Projects() {
       title: "Catetin",
       image: "/img/cover/cover-catetin.webp",
       description:
-        "Catetin adalah solusi platform digital yang dirancang untuk memberikan kendali penuh dan laporan akurat bagi pemilik berbagai jenis usaha. Mengusung slogan Lebih dari Sekedar Catat, aplikasi ini memungkinkan pengguna untuk mengelola operasional bisnis melalui satu genggaman, mulai dari manajemen multi usaha, manajemen pegawai, hingga pemantauan persediaan barang secara terintegrasi.Platform ini juga mempermudah proses pencatatan transaksi dan penyajian laporan penjualan yang akurat melalui fitur dashboard pemilik usaha. Dengan fokus pada efisiensi, Catetin hadir untuk membantu pengusaha melakukan analisis pendapatan dari berbagai unit bisnis dalam satu platform tanpa proses yang rumit.",
+        "Catetin is a digital solution built to give business owners total control and pinpoint accuracy. With our tagline 'More Than Just a Log,' you can manage every aspect of your operations—multi-business oversight, staff management, and integrated stock tracking—all in one hand. We simplify transaction logging and provide real-time sales insights via a dedicated owner dashboard. Designed for maximum efficiency, Catetin empowers you to analyze revenue across all your ventures in one place, without the complexity",
       tech: ["PHP", "Laravel", "TailwindCss"],
       category: "website",
       link: "#",
@@ -20,7 +20,7 @@ export default function Projects() {
       title: "TBMATE",
       image: "/img/cover/cover-tbmate.webp",
       description:
-        "TBMATE adalah aplikasi kesehatan berbasis mobile yang dirancang untuk meningkatkan kepatuhan minum obat bagi pasien Tuberkulosis (TBC). Aplikasi ini berfungsi sebagai pendamping digital yang memastikan pengobatan berjalan tuntas melalui fitur pengingat otomatis yang terjadwal serta sistem VOT Pintar berbasis kecerdasan buatan untuk mengawasi konsumsi obat secara efektif. Selain fokus pada kedisiplinan jadwal, TBMATE juga memfasilitasi pengguna dengan fitur Konsultasi Dokter yang terintegrasi dengan API Halodoc, memungkinkan pasien mendapatkan jawaban cepat mengenai dosis atau efek samping obat. Dengan pendekatan yang praktis dan suportif, aplikasi ini bertujuan menutup celah bagi penyakit untuk kambuh kembali dan membantu pasien mencapai kesembuhan total dengan lebih tenang.",
+        "TBMATE is a mobile health assistant built to boost medication compliance for TB patients. It acts as a digital partner that guarantees treatment success via automated reminders and an AI-driven Smart VOT system for effective monitoring. The app also features a direct Doctor Consultation tool powered by Halodoc API, providing instant guidance on dosages and side effects. By offering a practical and supportive experience, TBMATE eliminates the risk of relapse and empowers patients to reach total recovery confidently.",
       tech: ["Dart", "Flutter", "Firebase", "Figma"],
       category: "mobile",
       link: "#",
@@ -29,7 +29,7 @@ export default function Projects() {
       title: "Theorem One",
       image: "/img/cover/cover-theoremone.webp",
       description:
-        "Teorem One hadir sebagai solusi inovatif bagi mahasiswa yang sering menghadapi kendala keterlambatan lulus akibat manajemen waktu yang buruk, masalah finansial yang memaksa mereka bekerja paruh waktu, hingga kebiasaan prokrastinasi. Berdasarkan data, sekitar 50–80% mahasiswa cenderung menunda tugas akademik meski menyadari dampak negatifnya. Untuk mengatasi hal tersebut, Teorem One dirancang sebagai aplikasi manajemen waktu yang membantu pengguna menyusun jadwal secara sederhana dan otomatis mendeteksi serta mengoreksi jadwal yang tumpang tindih guna mencegah kelelahan mental atau burnout. Keunggulan utama aplikasi ini terletak pada fitur Time Delaying yang dirancang khusus untuk menciptakan transisi sehat antar aktivitas melalui teknik pernapasan dan brain switching activity. Fitur ini berfungsi membantu menjaga fokus dan keseimbangan energi pengguna di tengah padatnya jadwal antara kuliah, organisasi, dan pekerjaan. Dengan integrasi pendeteksi bentrokan jadwal dan teknik relaksasi yang cerdas, Teorem One menjadi mitra strategis bagi mahasiswa untuk mengubah kebiasaan menunda menjadi produktivitas yang lebih terencana dan berkelanjutan.",
+        "Teorem One is an innovative solution for students struggling with graduation delays caused by poor time management, financial constraints, and procrastination. With 50–80% of students admitting to habitual task-delaying, Teorem One steps in as a smart time management tool that simplifies scheduling while automatically resolving conflicts to avoid mental exhaustion. Our signature 'Time Delaying' feature facilitates healthy transitions using breathing exercises and brain-switching activities to keep users focused and energized between classes, organizations, and jobs. By combining clash detection with intelligent relaxation, Teorem One is the ultimate strategic partner to help students turn procrastination into consistent, sustainable productivity.",
       tech: ["Swift", "SwiftUI", "Figma"],
       category: "mobile",
       link: "#",
@@ -38,7 +38,7 @@ export default function Projects() {
       title: "Website Pantai Ria Bomo",
       image: "/img/cover/cover-pantai-ria.webp",
       description:
-        "Website pariwisata digital yang dirancang untuk mempromosikan keindahan dan potensi wisata Pantai Ria Bomo sebagai destinasi unggulan pesisir. Website ini berfungsi sebagai pusat informasi terpadu yang menyajikan daya tarik alam, aktivitas wisata, fasilitas, serta budaya lokal yang dapat dinikmati oleh wisatawan secara lengkap dan menarik. Selain sebagai media promosi, website Pantai Ria Bomo juga dilengkapi dengan informasi pendukung seperti rute lokasi, galeri visual, serta agenda acara di Pantai Ria Bomo. Dengan tampilan yang modern dan mudah diakses, website ini bertujuan meningkatkan minat kunjungan wisatawan, memperluas jangkauan promosi digital, serta mendukung pengembangan ekonomi lokal melalui pariwisata yang berkelanjutan.",
+        "A digital tourism website designed to promote the beauty and potential of Pantai Ria Bomo as a premier coastal destination. This platform serves as an integrated information hub, showcasing natural attractions, tourist activities, facilities, and local culture in a comprehensive and engaging manner. In addition to its promotional role, the website provides essential details such as location routes, a visual gallery, and an events calendar for Pantai Ria Bomo. Featuring a modern and accessible design, the website aims to boost tourist interest, expand digital marketing reach, and support local economic development through sustainable tourism.",
       tech: ["JavaScript", "Next.js", "TailwindCss", "Figma"],
       category: "website",
       link: "#",
