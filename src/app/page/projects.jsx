@@ -35,7 +35,7 @@ export default function Projects() {
       link: "#",
     },
     {
-      title: "Website Pantai Ria Bomo",
+      title: "Digital Destination Marketing Platform for Pantai Ria Bomo",
       image: "/img/cover/cover-pantai-ria.webp",
       description:
         "A digital tourism website designed to promote the beauty and potential of Pantai Ria Bomo as a premier coastal destination. This platform serves as an integrated information hub, showcasing natural attractions, tourist activities, facilities, and local culture in a comprehensive and engaging manner. In addition to its promotional role, the website provides essential details such as location routes, a visual gallery, and an events calendar for Pantai Ria Bomo. Featuring a modern and accessible design, the website aims to boost tourist interest, expand digital marketing reach, and support local economic development through sustainable tourism.",
