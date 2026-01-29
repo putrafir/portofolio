@@ -78,7 +78,7 @@ export default function About() {
           {/* Buttons */}
           <motion.div variants={itemUp} className="flex items-center gap-6">
             <a
-              href="https://drive.google.com/file/d/1JfiEkO5b5IrnM4OihiAVMiZ6m2dyz2RN/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_EN8vtlxNsrnNPMpXhBlAMStuodtsZ48/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className=" text-sm rounded-full border-2 border-lavender px-7 py-3 text-lavender-teks transition-all duration-300 hover:bg-[#7f3cf0] hover:text-white"
