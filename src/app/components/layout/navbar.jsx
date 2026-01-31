@@ -142,7 +142,7 @@ export default function Navbar() {
             className="
         fixed top-[72px] left-0 w-full z-40
         bg-[#0f0715]/95 backdrop-blur-xl
-        md:hidden overflow-hidden 
+        lg:hidden overflow-hidden 
       "
           >
             <ul className="flex flex-col gap-6 px-10 py-8">
