@@ -34,7 +34,7 @@ export default function Navbar() {
         className="object-contain"
       />
 
-      <div className=" hidden md:flex">
+      <div className=" hidden lg:flex">
         <ul className="flex gap-6 items-center pr-10">
           {navItems.map((item) => (
             <li key={item.label} className="list-none">
@@ -86,7 +86,7 @@ export default function Navbar() {
       </div>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden flex flex-col gap-1.5"
+        className="lg:hidden flex flex-col gap-1.5"
       >
         <span className="w-6 h-[2px] bg-white" />
         <span className="w-6 h-[2px] bg-white" />

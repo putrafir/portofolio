@@ -50,7 +50,7 @@ export default function About() {
           {/* Title */}
           <motion.h2
             variants={itemUp}
-            className=" text-[34px] md:text-[64px] leading-tight font-extrabold mb-6 bg-gradient-lavender-to-white"
+            className=" text-[34px] md:text-5xl xl:text-6xl leading-tight font-extrabold mb-6 bg-gradient-lavender-to-white"
           >
             Software Engineer
           </motion.h2>
@@ -58,7 +58,7 @@ export default function About() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
-            className="order-2 md:hidden my-10"
+            className="order-2 lg:hidden my-10"
           >
             <ProfileImage />
           </motion.div>
@@ -107,36 +107,8 @@ export default function About() {
             </motion.div>
           </motion.div>
         </motion.div>
-        {/* RIGHT IMAGE */}
-        {/* <motion.div
-        initial={{ opacity: 0, rotate: -10, scale: 0.95 }}
-        animate={{ opacity: 1, rotate: 0, scale: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-        className="relative group"
-      >
-        <div
-          className="
-            rotate-[-4deg]
-            rounded-4xl
-            overflow-hidden
-            border border-lavender
-            transition-all duration-500 ease-out
-            group-hover:rotate-0
-            group-hover:border-lavender-teks
-            group-hover:shadow-[0_0_25px_rgba(127,60,240,0.45)]
-          "
-        >
-          <Image
-            src="/img/mypicture.jpg"
-            width={440}
-            height={540}
-            alt="Gerold"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </motion.div> */}
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <ProfileImage />
         </div>
       </div>

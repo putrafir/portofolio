@@ -40,7 +40,7 @@ export default function Achievements() {
         </div>
 
         {/* Blog Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-10">
           {blogs.map((blog, i) => (
             <motion.article
               key={blog.id}

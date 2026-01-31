@@ -49,7 +49,7 @@ export default function Projects() {
     activeFilter === "All"
       ? projects
       : projects.filter(
-          (project) => project.category === activeFilter.toLowerCase()
+          (project) => project.category === activeFilter.toLowerCase(),
         );
   return (
     <section
@@ -105,7 +105,7 @@ export default function Projects() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10"
       >
         {filteredProjects.map((project, i) => (
           <div

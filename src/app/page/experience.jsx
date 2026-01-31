@@ -55,11 +55,11 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className=" scroll-smooth  bg-[#0f0715] relative px-4 md:px-24 py-20 md:py-32"
+      className=" scroll-smooth  bg-[#0f0715] relative px-4 lg:px-24 py-20 lg:py-32"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#3b1b6d,transparent_40%)]" />
       {/* TITLE */}
-      <div className="text-center md:mb-20">
+      <div className="text-center lg:mb-20">
         <Header title="Experience" />
         {/* <p className="text-white/70 max-w-2xl mx-auto">
           We put your ideas and wishes into a unique digital experience that
@@ -106,31 +106,32 @@ export default function Experience() {
               onMouseEnter={() => handleHover(i)}
               // onMouseLeave={() => setActive(null)}
               className="
-                grid grid-rows-1 md:grid-cols-[400px_1fr_40px] gap-4 md:gap-8
-                p-4 md:px-10  md:py-10
+                grid grid-rows-1 lg:grid-cols-[400px_1fr_40px] gap-4 lg:gap-8
+                p-4 lg:px-10  lg:py-10
                 border-b border-lavender/30
                 cursor-pointer
+                
               "
             >
               {/* LEFT */}
-              <div className="relative flex items-start justify-between md:block">
+              <div className="relative flex items-start justify-between lg:block">
                 <div>
                   <h3
-                    className={`text-md md:text-2xl font-bold transition-colors ${
+                    className={`text-lg lg:text-2xl font-bold transition-colors ${
                       active === i ? "text-white" : "text-white/90"
                     }`}
                   >
                     {item.position}
                   </h3>
                   <h4
-                    className={` text-sm md:text-lg font-semibold ${
+                    className={` text-sm lg:text-lg font-semibold ${
                       active === i ? "text-white" : " text-white/80"
                     }`}
                   >
                     {item.company}
                   </h4>
                   <h4
-                    className={` text-sm md:text-lg  ${
+                    className={` text-sm lg:text-lg  ${
                       active === i ? "text-white" : "text-white/70"
                     }`}
                   >
@@ -138,7 +139,7 @@ export default function Experience() {
                   </h4>
                 </div>
                 <ArrowUpRight
-                  className={`w-6 h-6 md:hidden transition-all ${
+                  className={`w-6 h-6 lg:hidden transition-all ${
                     active === i ? "text-white rotate-45" : "text-lavender"
                   }`}
                 />
@@ -146,7 +147,7 @@ export default function Experience() {
 
               {/* MIDDLE */}
               <p
-                className={`max-w-md text-xs md:text-sm transition-colors ${
+                className={`max-w-lg text-xs lg:text-sm transition-colors ${
                   active === i ? "text-white/90" : "text-white/60"
                 }`}
               >
@@ -155,7 +156,7 @@ export default function Experience() {
 
               {/* RIGHT */}
               <ArrowUpRight
-                className={` hidden md:block w-6 h-6 transition-all ${
+                className={` hidden lg:block w-6 h-6 transition-all ${
                   active === i ? "text-white rotate-45" : "text-lavender"
                 }`}
               />
